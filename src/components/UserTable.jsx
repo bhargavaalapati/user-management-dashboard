@@ -1,7 +1,7 @@
 import React from 'react';
 import { Edit2, Trash2 } from 'lucide-react';
 
-export default function UserTable({ users, onSort, sortConfig }) {
+export default function UserTable({ users, onSort, sortConfig, onEdit, onDelete }) {
     const getSortIcon = (key) => {
         if (sortConfig.key !== key) return ' ↕';
         return sortConfig.direction === 'asc' ? ' ↑' : ' ↓';
@@ -38,8 +38,8 @@ export default function UserTable({ users, onSort, sortConfig }) {
                                 </span>
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-3">
-                                <button className="text-indigo-600 hover:text-indigo-900"><Edit2 size={18} /></button>
-                                <button className="text-red-600 hover:text-red-900"><Trash2 size={18} /></button>
+                                <button onClick={() => onEdit(user)} className="text-indigo-600 hover:text-indigo-900"><Edit2 size={18} /></button>
+                                <button onClick={() => onDelete(user)} className="text-red-600 hover:text-red-900"><Trash2 size={18} /></button>
                             </td>
                         </tr>
                     )) : (
