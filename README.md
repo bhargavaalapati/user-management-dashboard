@@ -40,8 +40,8 @@ The application focuses on:
 
 | Resource | Link |
 |----------|------|
-| 🌐 Live Application | **[Insert Vercel/Netlify Link Here]** |
-| 🎥 Video Walkthrough | **[Insert Loom/YouTube Link Here]** |
+| 🌐 Live Application | **https://user-management-dashboard-topaz-three.vercel.app/** |
+| 🎥 Video Walkthrough | **https://www.loom.com/share/0ffe3b14e0ed4a93b814d2c428f46087** |
 
 ---
 
